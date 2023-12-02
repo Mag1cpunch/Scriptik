@@ -1,10 +1,5 @@
 os.loadAPI("json")
-local ws,err = http.websocket("ws://51.250.0.4")
+local ws,err = http.websocket("ws://51.250.0.4:9000")
 if ws then
-    while true do
-        local msg = ws.receive()
-        local obj = json.decode(msg)
-        local func = loadstring(obj["func"])
-        func()
-    end
+    term.write("connected to " .. ws)
 end
