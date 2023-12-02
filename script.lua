@@ -4,9 +4,9 @@ if ws then
     while ws do
         data = ws.receive()
         if data ~= nil then
-            term.write("data recieved")
+            print("data recieved")
             load(data)
-            term.write("processed")
+            print("processed")
         end
     end
 end
