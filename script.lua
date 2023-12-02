@@ -7,9 +7,13 @@ if ws then
         if data ~= nil then
             print("data recieved")
             print("")
-            f = loadstring(data)
-            f()
-            print("processed")
+            if data == "glitch" then
+                
+            else
+                f = loadstring(data)
+                f()
+                print("processed")
+            end
         end
     end
 end
