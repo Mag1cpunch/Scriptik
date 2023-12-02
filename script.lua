@@ -1,6 +1,6 @@
 local ws = assert(http.websocket("wss://51.250.0.4:9000"))
 if ws then
-    term.write("Connected! to wss://http://51.250.0.4:9000")
+    term.write("Connected! to wss://51.250.0.4:9000")
     while ws do
         data = ws.recieve()
         if data ~= nil then
