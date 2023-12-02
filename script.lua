@@ -5,7 +5,7 @@ if ws then
         data = ws.receive()
         if data ~= nil then
             print("data recieved")
-            load(data)
+            print(data)
             print("processed")
         end
     end
